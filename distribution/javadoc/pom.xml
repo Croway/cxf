@@ -707,6 +707,13 @@
                     <footer>Apache CXF API</footer>
                     <doctitle>Apache CXF ${project.version} API</doctitle>
                     <notimestamp>true</notimestamp>
+                    <additionalDependencies>
+                        <additionalDependency>
+                            <groupId>org.jboss.spec.javax.rmi</groupId>
+                            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+                            <version>1.0.6.Final</version>
+                        </additionalDependency>
+                    </additionalDependencies>
                 </configuration>
             </plugin>
         </plugins>
