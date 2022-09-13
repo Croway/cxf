@@ -46,9 +46,9 @@ public class PropertyUtil {
                 if (st.hasMoreTokens()) {
                     value = st.nextToken().trim();
                 }
-
-                maps.put(key, value);
-
+                if (key != null && value != null) {
+                    maps.put(key, value);
+                }
                 line = br.readLine();
             }
         }
