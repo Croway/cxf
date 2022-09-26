@@ -19,10 +19,8 @@
 
 package org.apache.cxf.jaxrs.swagger;
 
-import org.apache.cxf.jaxrs.swagger.ui.OsgiSwaggerUiResolver;
 import org.apache.cxf.jaxrs.swagger.ui.SwaggerUiResolver;
 
-import io.swagger.annotations.Api;
 
 /**
  * SwaggerUI resolvers implementation for Swagger 1.5.x
@@ -32,11 +30,13 @@ public final class SwaggerUi {
     
     static {
         SwaggerUiResolver theHelper;
-        try {
+        //TODO: [OSGi+Jakarta] uncomment this when osgi comes back
+        /* try {
             theHelper = new OsgiSwaggerUiResolver(Api.class);
         } catch (Throwable ex) {
             theHelper = new SwaggerUiResolver(AbstractSwaggerFeature.class.getClassLoader());
-        }
+        }*/
+        theHelper = new SwaggerUiResolver(AbstractSwaggerFeature.class.getClassLoader());
         HELPER = theHelper;
     }
 

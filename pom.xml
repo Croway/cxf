@@ -172,7 +172,6 @@
         <module>integration</module>
         <module>maven-plugins</module>
         <module>services</module>
-        <module>osgi</module>
         <module>systests</module>
     </modules>
     <profiles>

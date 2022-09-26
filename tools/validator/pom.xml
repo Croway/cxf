@@ -32,14 +32,6 @@
     </parent>
     <properties>
         <cxf.module.name>org.apache.cxf.tools.validator</cxf.module.name>
-        <cxf.osgi.export>
-            =org.apache.cxf.tools.validator.internal,
-            org.apache.cxf.tools.validator.*,
-        </cxf.osgi.export>
-        <cxf.osgi.import>
-            javax.jws*;version="${cxf.osgi.jws.version}",
-            javax.xml.bind*;version="${cxf.osgi.javax.bind.version}"
-        </cxf.osgi.import>
     </properties>
     <dependencies>
         <dependency>
@@ -86,18 +78,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <Export-Package>${cxf.osgi.export}</Export-Package>
-                    </instructions>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

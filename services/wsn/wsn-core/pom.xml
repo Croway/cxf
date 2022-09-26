@@ -42,16 +42,6 @@
             <artifactId>geronimo-jms_1.1_spec</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.aries.blueprint</groupId>
-            <artifactId>org.apache.aries.blueprint.core</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
         </dependency>
@@ -119,36 +109,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <Require-Bundle>
-                            org.apache.cxf.services.wsn.cxf-services-wsn-api
-                        </Require-Bundle>
-                        <Import-Package>
-                            org.apache.cxf.wsn.util.*;version=${cxf.osgi.version.clean},
-                            !org.apache.cxf.wsn*,
-                            javax.xml.bind*;version="${cxf.osgi.javax.bind.version}",
-                            javax.jws*;version="${cxf.osgi.jws.version}",
-                            javax.xml.ws*;version="${cxf.osgi.javax.xml.ws.version}",
-                            org.apache.cxf*;version="[3.0,4)",
-                            *
-                        </Import-Package>
-                        <Export-Package>
-                            org.apache.cxf.wsn.services;version=${cxf.osgi.version.clean}
-                        </Export-Package>
-                        <_nouses>true</_nouses>
-                        <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
-                    </instructions>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
     <profiles>
         <profile>
             <id>java9plus</id>
