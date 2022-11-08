@@ -81,8 +81,8 @@ public class PlugInClassLoaderTest {
 
     @Test
     public void testLoadClassWithParentClassLoader() throws Exception {
-        Class<?> resultClass = plugInClassLoader.loadClass("org.omg.CORBA.ORB");
-        assertEquals("wrong class", "org.omg.CORBA.ORB", resultClass.getName());
+        Class<?> resultClass = plugInClassLoader.loadClass("org.objectweb.asm.Attribute");
+        assertEquals("wrong class", "org.objectweb.asm.Attribute", resultClass.getName());
         assertFalse("class loader must NOT be the plugInClassLoader",
             plugInClassLoader.equals(resultClass.getClassLoader()));
     }

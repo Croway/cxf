@@ -61,9 +61,6 @@
         <module>clustering/failover_jaxws_osgi</module>
         <module>clustering/failover_server</module>
         <module>configuration_interceptor</module>
-        <module>corba/bank</module>
-        <module>corba/bank_ws_addressing</module>
-        <module>corba/hello_world</module>
         <module>groovy_spring_support</module>
         <module>in_jvm_transport</module>
         <module>java_first_jaxws</module>
@@ -296,11 +293,6 @@
                 <dependency>
                     <groupId>org.glassfish.jaxb</groupId>
                     <artifactId>jaxb-xjc</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>org.glassfish.corba</groupId>
-                    <artifactId>glassfish-corba-orb</artifactId>
-                    <version>4.2.2</version>
                 </dependency>
             </dependencies>
         </profile>

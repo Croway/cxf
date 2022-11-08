@@ -35,6 +35,5 @@
         <module>wsdlto</module>
         <module>javato</module>
         <module>wadlto</module>
-        <module>corba</module>
     </modules>
 </project>

@@ -131,7 +131,6 @@
         <cxf.httpcomponents.core5.version>5.1.5</cxf.httpcomponents.core5.version>
         <cxf.jackson.version>2.14.1</cxf.jackson.version>
         <cxf.jackson.databind.version>2.14.1</cxf.jackson.databind.version>
-        <cxf.jacorb.version>3.9</cxf.jacorb.version>
         <cxf.jaeger.version>1.8.1</cxf.jaeger.version>
         <cxf.jakarta.activation.version>1.2.2</cxf.jakarta.activation.version>
         <cxf.jakarta.injectapi.version>1.0.3</cxf.jakarta.injectapi.version>
@@ -2346,12 +2345,6 @@
                 <dependency>
                     <groupId>org.apache.geronimo.specs</groupId>
                     <artifactId>geronimo-jta_1.1_spec</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>org.jacorb</groupId>
-                    <artifactId>jacorb</artifactId>
-                    <version>${cxf.jacorb.version}</version>
-                    <scope>test</scope>
                 </dependency>
             </dependencies>
             <dependencyManagement>
