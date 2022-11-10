@@ -105,7 +105,6 @@
         <module>js_browser_client_java_first</module>
         <module>js_browser_client_simple</module>
         <module>js_client</module>
-        <module>js_provider</module>
         <module>mtom</module>
         <module>restful_dispatch</module>
         <module>ruby_spring_support</module>
