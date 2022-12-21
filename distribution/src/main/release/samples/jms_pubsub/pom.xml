@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-codegen-plugin</artifactId>
-                <version>3.5.5</version>
+                <version>3.5.5-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>generate-sources</id>
