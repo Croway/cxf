@@ -87,32 +87,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <Import-Package>
-                            javax.xml.bind*;version="${cxf.osgi.javax.bind.version}",
-                            javax.jws*;version="${cxf.osgi.jws.version}",
-                            javax.xml.ws*;version="${cxf.osgi.javax.xml.ws.version}",
-                            org.apache.cxf*;version="[3.0,4)",
-                            *
-                        </Import-Package>
-                        <Export-Package>
-                            org.oasis_open.docs.wsn.*;version=1.3;-noimport:=true,
-                            org.oasis_open.docs.wsrf.*;version=1.2,
-                            org.apache.cxf.wsn.client;version=${cxf.osgi.version.clean},
-                            org.apache.cxf.wsn.util;version=${cxf.osgi.version.clean},
-                            org.apache.cxf.wsn.wsdl;version=${cxf.osgi.version.clean},
-                            org.apache.cxf.wsn.jaxws;version=${cxf.osgi.version.clean}
-                        </Export-Package>
-                        <_nouses>true</_nouses>
-                        <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
-                    </instructions>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>

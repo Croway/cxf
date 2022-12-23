@@ -32,11 +32,6 @@
     </parent>
     <properties>
         <cxf.module.name>org.apache.cxf.transport.http.netty.client</cxf.module.name>
-        <cxf.osgi.import>
-            javax.servlet*;version="[2,4)",
-            io.netty.*;version="${cxf.netty.version.range}",
-            javax.annotation;version="${cxf.osgi.javax.annotation.version}",
-        </cxf.osgi.import>
     </properties>
     <dependencies>
         <dependency>

@@ -144,35 +144,13 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <instructions>
-                        <_nouses>true</_nouses>
-                        <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
-                        <Implementation-Title>${project.name}</Implementation-Title>
-                        <Implementation-Vendor>The Apache Software Foundation</Implementation-Vendor>
-                        <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
-                        <Specification-Title>${project.name}</Specification-Title>
-                        <Specification-Vendor>The Apache Software Foundation</Specification-Vendor>
-                        <Export-Package>
-                            org.apache.cxf.sts.*;version=${cxf.osgi.version.clean}
-                        </Export-Package>
-                        <Import-Package>
-                            javax.servlet*;version="${cxf.osgi.javax.servlet.version}",
-                            org.apache.cxf.sts.provider.*;version=${cxf.osgi.version.clean},
-                            !org.apache.cxf.sts.*,
-                            org.apache.cxf.*,
-                            javax.xml.ws*;version="[0.0,3)",
-                            org.springframework.ldap*;resolution:=optional,
-                            org.ehcache*;resolution:=optional;version="[3.0.0, 4.0.0)",
-                            org.opensaml*;version="${cxf.opensaml.osgi.version.range}",
-                            javax.xml.bind;version="${cxf.osgi.javax.bind.version}",
-                            *
-                        </Import-Package>
-                        <Bundle-SymbolicName>org.apache.cxf.services.sts.core</Bundle-SymbolicName>
-                    </instructions>
+                    <systemPropertyVariables>
+                        <!--  The 'http://javax.xml.XMLConstants/property/accessExternalSchema' is not supported by Xerces -->
+                        <hazelcast.ignoreXxeProtectionFailures>true</hazelcast.ignoreXxeProtectionFailures>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>

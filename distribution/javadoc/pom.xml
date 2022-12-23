@@ -194,14 +194,6 @@
             <artifactId>xmlschema-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>osgi.cmpn</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast</artifactId>
             <version>${cxf.hazelcast.version}</version>
@@ -229,14 +221,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.osgi</groupId>
-            <artifactId>spring-osgi-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.aries.blueprint</groupId>
-            <artifactId>org.apache.aries.blueprint.core</artifactId>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.fastinfoset</groupId>
@@ -495,11 +479,6 @@
             <artifactId>jetty-alpn-server</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.jacorb</groupId>
-            <artifactId>jacorb</artifactId>
-            <version>${cxf.jacorb.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-server</artifactId>
             <version>${cxf.jetty9.version}</version>
@@ -638,7 +617,6 @@
                                         <exclude name="**/systests/**" />
                                         <exclude name="**/sts-war/**" />
                                         <exclude name="**/xkms-war/**" />
-                                        <exclude name="**/xkms-itests/**" />
                                     </fileset>
                                     <regexpmapper from="^(.*)/main/java/(.*)$$" to="\2" />
                                 </copy>
@@ -648,9 +626,6 @@
                                         <include name="**/src/main/generated/**/*.java" />
                                     </fileset>
                                     <fileset dir="../../rt/frontend/jaxws">
-                                        <include name="**/src/main/generated/**/*.java" />
-                                    </fileset>
-                                    <fileset dir="../../tools/corba">
                                         <include name="**/src/main/generated/**/*.java" />
                                     </fileset>
                                     <regexpmapper from="^(.*)/main/generated/(.*)$$" to="\2" />

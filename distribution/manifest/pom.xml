@@ -63,11 +63,6 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>cxf-tools-corba</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
             <artifactId>cxf-tools-wsdlto-frontend-jaxws</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -191,11 +186,6 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>cxf-rt-bindings-corba</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
             <artifactId>cxf-rt-bindings-coloc</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -257,11 +247,6 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>cxf-rt-frontend-js</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

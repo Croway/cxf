@@ -33,6 +33,5 @@
             <module>soap</module>
             <module>xml</module>
             <module>coloc</module>
-            <module>corba</module>
         </modules>
 </project>

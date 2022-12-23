@@ -33,6 +33,5 @@
         <module>simple</module>
         <module>jaxws</module>
         <module>jaxrs</module>
-        <module>js</module>
     </modules>
 </project>
