@@ -173,6 +173,7 @@
         <module>maven-plugins</module>
         <module>services</module>
         <module>systests</module>
+        <module>bomgeneration</module>
     </modules>
     <profiles>
         <profile>
