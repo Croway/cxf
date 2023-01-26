@@ -19,6 +19,7 @@
 package org.apache.cxf.rs.security.oidc.idp;
 
 import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Lob;
@@ -53,6 +54,7 @@ public class OidcUserSubject extends UserSubject {
     }
 
     @Lob
+    @Column(columnDefinition = "blob")
     @Basic(fetch = FetchType.EAGER)
     public IdToken getIdToken() {
         return idToken;
@@ -63,6 +65,7 @@ public class OidcUserSubject extends UserSubject {
     }
 
     @Lob
+    @Column(columnDefinition = "blob")
     @Basic(fetch = FetchType.EAGER)
     public UserInfo getUserInfo() {
         return userInfo;
