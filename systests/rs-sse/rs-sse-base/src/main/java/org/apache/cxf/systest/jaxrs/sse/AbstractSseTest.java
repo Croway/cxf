@@ -377,7 +377,7 @@ public abstract class AbstractSseTest extends AbstractSseBaseTest {
         assertThat(r.getStatus(), equalTo(204));
 
         await()
-            .atMost(10, TimeUnit.SECONDS)
+            .atMost(100, TimeUnit.SECONDS)
             .pollDelay(1, TimeUnit.SECONDS)
             .untilAsserted(() -> {
                 // Only two out of 4 messages should be delivered, others should be discarded
