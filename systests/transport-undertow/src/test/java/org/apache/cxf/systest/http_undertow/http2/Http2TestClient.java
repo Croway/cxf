@@ -106,7 +106,10 @@ public class Http2TestClient {
         }
         
         public RequestBuilder http2() {
-            options = OptionMap.create(UndertowOptions.ENABLE_HTTP2, true);
+            options = OptionMap.builder()
+                .set(UndertowOptions.ENABLE_HTTP2, true)
+                .set(UndertowOptions.ENDPOINT_IDENTIFICATION_ALGORITHM, "")
+                .getMap();
             return this;
         }
         
