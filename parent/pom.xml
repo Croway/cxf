@@ -131,7 +131,7 @@
         <cxf.jcache.version>1.1.1</cxf.jcache.version>
         <cxf.jdom.version>1.0</cxf.jdom.version>
         <cxf.jettison.version>1.5.4</cxf.jettison.version>
-        <cxf.jetty9.version>9.4.49.v20220914</cxf.jetty9.version>
+        <cxf.jetty9.version>9.4.51.v20230217</cxf.jetty9.version>
         <cxf.jetty.version>${cxf.jetty9.version}</cxf.jetty.version>
         <cxf.jexl.version>3.2.1</cxf.jexl.version>
         <cxf.joda.time.version>2.10.10</cxf.joda.time.version>
@@ -177,11 +177,11 @@
         <cxf.slf4j.version>1.7.36</cxf.slf4j.version>
         <cxf.snakeyaml.version>1.33</cxf.snakeyaml.version>
         <cxf.specs.jaxws.api.version>2.3_2</cxf.specs.jaxws.api.version>
-        <cxf.spring.boot.version>2.6.14</cxf.spring.boot.version>
-        <cxf.spring.ldap.version>2.3.6.RELEASE</cxf.spring.ldap.version>
+        <cxf.spring.boot.version>2.7.11</cxf.spring.boot.version>
+        <cxf.spring.ldap.version>2.4.1</cxf.spring.ldap.version>
         <cxf.spring.mock>spring-test</cxf.spring.mock>
-        <cxf.spring.security.version>5.7.7</cxf.spring.security.version>
-        <cxf.spring.version>5.3.26</cxf.spring.version>
+        <cxf.spring.security.version>5.7.8</cxf.spring.security.version>
+        <cxf.spring.version>5.3.27</cxf.spring.version>
         <cxf.stax-ex.version>1.8.3</cxf.stax-ex.version>
         <cxf.swagger.ui.version>4.15.5</cxf.swagger.ui.version>
         <cxf.swagger.v3.version>2.1.13</cxf.swagger.v3.version>
@@ -189,7 +189,7 @@
         <cxf.swagger2.guava.version>31.0.1-jre</cxf.swagger2.guava.version>
         <cxf.swagger2.guava.failureaccess.version>1.0.1</cxf.swagger2.guava.failureaccess.version>
         <cxf.tika.version>2.6.0</cxf.tika.version>
-        <cxf.tomcat.version>9.0.70</cxf.tomcat.version>
+        <cxf.tomcat.version>9.0.74</cxf.tomcat.version>
         <cxf.tomitribe.http.signature.version>1.8</cxf.tomitribe.http.signature.version>
         <cxf.undertow.version>2.2.23.SP2-redhat-00001</cxf.undertow.version>
         <!-- the Export-Package is the same as the Maven artifact

@@ -49,6 +49,7 @@
         <dependency>
             <groupId>com.sun.xml.messaging.saaj</groupId>
             <artifactId>saaj-impl</artifactId>
+            <version>${cxf.saaj-impl.version}</version>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
