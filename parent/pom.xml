@@ -717,6 +717,13 @@
                 </exclusions>
             </dependency>
             <dependency>
+                <groupId>com.sun.xml.messaging.saaj</groupId>
+                <artifactId>saaj-impl</artifactId>
+                <version>${cxf.saaj-impl.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${cxf.junit.version}</version>
@@ -2232,12 +2239,6 @@
                                 <groupId>xml-apis</groupId>
                             </exclusion>
                         </exclusions>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.sun.xml.messaging.saaj</groupId>
-                        <artifactId>saaj-impl</artifactId>
-                        <version>${cxf.saaj-impl.version}</version>
-                        <scope>runtime</scope>
                     </dependency>
                 </dependencies>
             </dependencyManagement>
