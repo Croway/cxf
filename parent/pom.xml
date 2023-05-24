@@ -177,7 +177,7 @@
         <cxf.slf4j.version>1.7.36</cxf.slf4j.version>
         <cxf.snakeyaml.version>1.33</cxf.snakeyaml.version>
         <cxf.specs.jaxws.api.version>2.3_2</cxf.specs.jaxws.api.version>
-        <cxf.spring.boot.version>2.7.11</cxf.spring.boot.version>
+        <cxf.spring.boot.version>2.7.12</cxf.spring.boot.version>
         <cxf.spring.ldap.version>2.4.1</cxf.spring.ldap.version>
         <cxf.spring.mock>spring-test</cxf.spring.mock>
         <cxf.spring.security.version>5.7.8</cxf.spring.security.version>
@@ -189,7 +189,7 @@
         <cxf.swagger2.guava.version>31.0.1-jre</cxf.swagger2.guava.version>
         <cxf.swagger2.guava.failureaccess.version>1.0.1</cxf.swagger2.guava.failureaccess.version>
         <cxf.tika.version>2.6.0</cxf.tika.version>
-        <cxf.tomcat.version>9.0.74</cxf.tomcat.version>
+        <cxf.tomcat.version>9.0.75</cxf.tomcat.version>
         <cxf.tomitribe.http.signature.version>1.8</cxf.tomitribe.http.signature.version>
         <cxf.undertow.version>2.2.23.SP2-redhat-00001</cxf.undertow.version>
         <!-- the Export-Package is the same as the Maven artifact
