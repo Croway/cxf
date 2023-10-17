@@ -189,7 +189,7 @@
         <cxf.swagger2.guava.version>31.0.1-jre</cxf.swagger2.guava.version>
         <cxf.swagger2.guava.failureaccess.version>1.0.1</cxf.swagger2.guava.failureaccess.version>
         <cxf.tika.version>2.6.0</cxf.tika.version>
-        <cxf.tomcat.version>9.0.75</cxf.tomcat.version>
+        <cxf.tomcat.version>9.0.82</cxf.tomcat.version>
         <cxf.tomitribe.http.signature.version>1.8</cxf.tomitribe.http.signature.version>
         <cxf.undertow.version>2.2.28.Final-redhat-00001</cxf.undertow.version>
         <!-- the Export-Package is the same as the Maven artifact
